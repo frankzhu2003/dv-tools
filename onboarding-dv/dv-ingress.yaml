@@ -1,0 +1,19 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: dv-ingress
+  namespace: develocity
+  annotations:
+    kubernetes.io/ingress.class: nginx
+spec:
+  rules:
+    - host :  "develocity.local"
+      http:
+        paths:
+          - pathType: ImplementationSpecific
+            path: "/"
+            backend:
+              service:
+                name: gradle-proxy
+                port:
+                  number: 80
