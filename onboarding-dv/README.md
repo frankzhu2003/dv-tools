@@ -5,7 +5,7 @@
 add nginx ingress
 ```
 helm repo add nginx-stable https://helm.nginx.com/stable                                                          
-helm install ngninx nginx-stable/nginx-ingress --set controller.enableLatencyMetrics=true --set prometheus.create=true --set controller.config.name=nginx-config
+helm install nginx nginx-stable/nginx-ingress --set controller.enableLatencyMetrics=true --set prometheus.create=true --set controller.config.name=nginx-config
 
 kubectl apply -f dv-ingress.yaml
 
