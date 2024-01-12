@@ -1,7 +1,7 @@
 #!/bin/bash
 
 helm install \
-    --create-namespace --namespace gradle-enterprise \
+    --create-namespace --namespace develocity \
     ge-standalone \
     gradle/gradle-enterprise-standalone \
     --values ./fzhu-ge-values.yaml \
