@@ -1,0 +1,7 @@
+# change the hostname with the dns name
+global:
+  hostname: ec2-3-135-238-213.us-east-2.compute.amazonaws.com 
+database:
+  type: embedded
+ingress:
+  enabled: true
